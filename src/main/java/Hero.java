@@ -20,7 +20,7 @@ private static ArrayList<Hero> insta=new ArrayList<Hero>();
         return hName;
     }
 
-    public String getAge() {
+    public int getAge() {
         return hAge;
     }
 
