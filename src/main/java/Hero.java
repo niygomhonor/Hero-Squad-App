@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Hero {
     private String hName;
-    private String hAge;
+    private int hAge;
     private String hPower;
     private String hWeakness;
     private int hId;
 private static ArrayList<Hero> insta=new ArrayList<Hero>();
-    public Hero(String name, String age, String power, String weakness) {
+    public Hero(String name, int age, String power, String weakness) {
         hName = name;
         hAge = age;
         hPower = power;

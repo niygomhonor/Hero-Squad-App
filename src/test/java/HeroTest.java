@@ -17,7 +17,7 @@ public class HeroTest {
 
     @Test
     public void Hero_instantiating_Done_Correctly() {
-
+Hero amHero=new Hero("Honorine",20,"Ever present","Calm");
     }
 
     @Test
