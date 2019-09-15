@@ -10,15 +10,20 @@
   <br>
 
   <div class="list-group text-white overflow-auto">
-   {{#each squad in instance }}
-      <a href="/squads/squad.getsId()" class="list-group-item list-group-item-action flex-column align-items-start  stylish-color-dark text-white overflow-auto">
+  {{#if squad}}
+   {{#each squad}}
+
         <div class="d-flex w-75 justify-content-between overflow-auto">
-            <h4 class="list-group-item-heading text-info">{{name}} <span class="badge">{{Heroes}}</span></h4>
-            <span >{{size}} max number of heroes</pan>
+            <h4 class="list-group-item-heading text-info"> Squad name:{{nameSquad}} <span </h4>
+            <h4 class="list-group-item-heading text-info"> Squad Size:{{squad.sizeSquad}} <span </h4>
+         <h4 class="list-group-item-heading text-info"> Squad Cause:{{causeSquad}}</span></h4>
         </div>
-        <p class="mb-1">{{cause}}</p>
-      </a>
+
 {{/each}}
+
+{{else}}
+        <p>No Squads  added Yet.</p>
+    {{/if}}
   </div>
 
 </section>

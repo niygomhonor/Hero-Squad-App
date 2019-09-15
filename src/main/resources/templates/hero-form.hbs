@@ -1,7 +1,7 @@
 {{#partial "content"}}
  <div class="view" style="background-image: url('https://wallpapercave.com/wp/rSSUY81.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 <h2 class="h2-reponsive text-info"><strong>Add new Hero<i class="fas fa-user-plus animate rotateIn infinite"></i></i></strong></h2>
-<form action="/heroesP" method="post">
+<form action="/heroes/new" method="post">
   <div class="form-group md-form">
   <label class="active text-white"  for="name">Hero's Name</label>
   <input id="name" name="name" class="form-control text-white" type="text" >
@@ -21,6 +21,7 @@
   <label class="active text-white"  for="weakness">Hero's Weakness</label>
   <input id="weakness" name="weakness" class="form-control text-white" type="text">
   </div>
+
 
 
   <button type="submit" class="btn aqua-gradient text-white">Add hero</button>
