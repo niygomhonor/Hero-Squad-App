@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Hero {
     private String hName;
@@ -7,6 +7,7 @@ public class Hero {
     private String hWeakness;
     private int hId;
 private static ArrayList<Hero> insta=new ArrayList<Hero>();
+
     public Hero(String name, int age, String power, String weakness) {
         hName = name;
         hAge = age;
@@ -17,10 +18,12 @@ private static ArrayList<Hero> insta=new ArrayList<Hero>();
     }
 
     public String getName() {
+
         return hName;
     }
 
-    public int getAge() {
+    public int getAge()
+    {
         return hAge;
     }
 
@@ -33,7 +36,17 @@ private static ArrayList<Hero> insta=new ArrayList<Hero>();
     }
 
     public int getId() {
+
         return hId;
     }
 
+    public static List<Hero> all() {
+        return insta;
+    }
+    public static void clear() {
+      insta.clear();
+    }
+    public static Hero find(int id) {
+        return insta.get(id - 1);
+    }
 }

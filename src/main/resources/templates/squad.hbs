@@ -1,0 +1,24 @@
+
+
+{{#partial "content"}}
+<h3>The squad.getName() squad uphold: squad.getCause() as their guiding principle.</h3>
+<div id="hero-details">
+    <ul>
+{{!--         {{#each hero in squad.getHeroes()}} --}}
+        <li><span class="heroDisplay">Hero Name:</span>hero.getName()</li>
+        <li><span class="heroDisplay">Ability:</span>hero.getPower()</li>
+        <li><span class="heroDisplay">Weakness:</span>hero.getWeakness()</li>
+        <li><span class="heroDisplay">Age: </span>hero.getAge()</li>
+        <hr>
+
+    </ul>
+</div>
+
+<br>
+<a href="/squads/squad.getId()/heroes/new">Add new hero</a>
+<br>
+<a href="/squads">All Squads!</a>
+
+{{/partial}}
+
+{{> layout.hbs}}
