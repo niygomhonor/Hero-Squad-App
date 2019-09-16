@@ -1,0 +1,29 @@
+
+{{!--  It will display the list of Squads--}}
+{{#partial "content"}}
+
+</section class="wrapper">
+<div class="view" style="background-image: url('https://images8.alphacoders.com/815/815404.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div class="jumbotron text-center">
+  <h1 class="h1-reponsive text-info" ><strong>Created Squad <i class="fas fa-id-card"></strong></i></h1>
+  <a href="/squads/new" class="btn btn-outline-white ">Add New Squad  <i class="fas fa-user-plus animate rotateIn infinite"></i></a>
+  <br>
+
+  <div class="list-group text-white overflow-auto">
+
+
+        <div class="d-flex w-75 justify-content-between overflow-auto">
+            <p class="list-group-item-heading text-info"> Squad name:{{squads.sName}}</p>
+            <p class="list-group-item-heading text-info"> Squad Size:{{squads.size}}</p>
+            <p class="list-group-item-heading text-info"> Squad Cause:{{squads.cause}}</p>
+        </div>
+
+  </div>
+
+</div>
+</div>
+</section>
+
+{{/partial}}
+
+{{> layout.hbs}}
