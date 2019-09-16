@@ -1,11 +1,9 @@
 # Hero-Squad-App
 
+
 ## Author 
 
 `NIYONKURU Honorine`
-
-
-
 
 ## Contents are the following
   - [x] App description
@@ -43,3 +41,4 @@ This application will allow user to design his desired hero and put him in any s
 - [x] MIT
 
 Copyright &copy; [2019] NIYONKURU Honorine
+
