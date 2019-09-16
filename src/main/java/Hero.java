@@ -14,7 +14,7 @@ private static ArrayList<Hero> insta=new ArrayList<Hero>();
         hPower = power;
         hWeakness = weakness;
         insta.add(this);
-        hId=insta.size();
+        this.hId=insta.size();
     }
 
     public String getName() {
@@ -36,17 +36,18 @@ private static ArrayList<Hero> insta=new ArrayList<Hero>();
     }
 
     public int getId() {
-
         return hId;
+    }
+
+    public void sethId(int hid) {
+        this.hId = hId;
     }
 
     public static List<Hero> all() {
         return insta;
     }
-    public static void clear() {
-      insta.clear();
-    }
-    public static Hero find(int id) {
-        return insta.get(id - 1);
+
+    public static Hero findById(int hId) {
+        return insta.get(hId-1);
     }
 }
