@@ -1,11 +1,6 @@
 {{#partial "content"}}
 
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <div class="container">
-              <a class="navbar-brand" href="#"><strong>Hero Squad</strong></a>
 
-          </nav>
           <!-- Navbar -->
           <!-- Full Page Intro -->
 
@@ -17,20 +12,34 @@
                 <div class="row">
                   <!--Grid column-->
                   <div class="col-md-12 mb-4 white-text text-center">
-                    <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 animated wobble"><strong>Hero Squad <i class="fas fa-mask animated rotateIn infinite"></i></strong></h1>
-                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-                    <h4 class="text-uppercase mb-4 white-text animate fadeInDown"><strong id="type"></strong> <i class="fas fa-bolt animated wobble infinite"></i></h4>
-                    <a  onclick="firstClick()"  class="btn btn-outline-white" href="/squads/new" >Add a new Squad <i class="fas fa-dragon animated wobble infinite"></i></a>
-                    <a class="btn btn-outline-white " onclick="btnClick()"  href="/squads/list">View Squad List <i class="fas fa-dragon animated wobble infinite"></i> </a>
-                      <a class="btn btn-outline-white" onclick="btnClick()"  href="/heroes">View Hero details <i class="fas fa-dragon animated wobble infinite"></i> </a>
 
-               <div class="dropdown-content">
-                                <a href="/heroes/1">First Hero</a>
-                                <a href="/heroes/2">Second Hero</a>
-                                <a href="/heroes/3">Third Hero</a>
-                      </div>
+                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+
+
+                      {{#if hero}} <!--if posts exist, then -->
+                          {{#each hero }} <!--loop-->
+                              <a class="btn btn-outline-white" onclick="btnClick()"  href="/heroes/{{id}}">View Hero details <i class="fas fa-dragon animated wobble infinite"></i> </a>
+
+                              <p> Hero Name:<a href="/heroes/{{id}}">{{name}}</a></p> <!--show-->
+                          {{/each}}
+                      {{else}} <!--no posts!-->
+                          <p>No hero yet!</p>
+                      {{/if}}
+
+                   <h3>Squad Details</h3>
+
+                      {{#if squads}} <!--if posts exist, then -->
+                          {{#each squads}} <!--loop-->
+                              <a class="btn btn-outline-white " onclick="btnClick()"  href="/squads/{{id}}">View Squad List <i class="fas fa-dragon animated wobble infinite"></i> </a>
+                              <p> Squad Name:<a href="/squads/{{id}}">{{sName}}Squad</a></p> <!--show-->
+                          {{/each}}
+                      {{else}}
+                          <!--no posts!-->
+                          <p>No Squad yet!</p>
+                      {{/if}}
 
                   </div>
+
                   <!--Grid column-->
                 </div>
                 <!--Grid row-->
