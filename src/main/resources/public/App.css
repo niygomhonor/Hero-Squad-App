@@ -1,0 +1,16 @@
+body{
+background-image:url("images/bg.jpg")
+}
+a:hover{
+color:yellow;
+}
+p,a{
+font-family: 'Merienda', cursive;
+}
+h4,h1,li,h2,h3{
+font-family: 'Merienda', cursive;
+}
+label{
+color:white;
+font-family: 'Merienda', cursive;
+}
