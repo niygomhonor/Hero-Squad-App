@@ -57,22 +57,16 @@ public class App {
             return new ModelAndView(model, "squad-form.hbs");
         }, new HandlebarsTemplateEngine());
 
-//post: process new Squad form
-
+        //post: process new Squad form
         post("/squads/list", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            String sName = request.queryParams("sname");
+            String sName = request.queryParams("sName");
             String cause=request.queryParams("cause");
             int size=Integer.parseInt(request.queryParams("size"));
 
-                Squad newIdentitySquad =new Squad(sName,cause,size);
-                model.put("squads",newIdentitySquad);
+            Squad newIdentitySquad =new Squad(sName,cause,size);
+            model.put("squads",newIdentitySquad);
             return new ModelAndView(model, "squadSuccessful.hbs");
-        }, new HandlebarsTemplateEngine());
-
-        get("/squads/list", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model,"squads.hbs" );
         }, new HandlebarsTemplateEngine());
 
         //route to handle displaying found squad returned by the find method in class Hero
@@ -84,16 +78,6 @@ public class App {
 //            model.put("template", "templates/squad.vtl");
             return new ModelAndView(model, "squads.hbs");
         }, new HandlebarsTemplateEngine());
-
-
-        // route to handle a form for adding new heroes to squads specific squad using the squad id
-//        get("squads/:id/heroes/new", (request, response) -> {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            Squad squadHeroId = Squad.findSquadById(Integer.parseInt(request.params("id")));
-//            model.put("squadHeroId", squadHeroId);
-////            model.put("template", "templates/squadHeroesForm.vtl");
-//            return new ModelAndView(model, "hero-form.hbs");
-//        }, new HandlebarsTemplateEngine());
 
 
     }

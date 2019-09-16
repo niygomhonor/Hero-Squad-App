@@ -1,11 +1,13 @@
 
 {{#partial "content"}}
-    <p>Hero Name</p>
-    <p>{{hero.name}}</p>
+    <div class="view text-center">
+    <p>Hero Name: {{name}}</p>
+
     <p>{{hero.name}} is aged {{hero.age}}</p>
-    <p>Hero powers</p>
-    <p>{{hero.power}}</p>
-    <p>Hero Weakness</p>
-    <p>{{hero.weakness}} </p>
+    <p>Hero powers:{{hero.power}}</p>
+
+    <p>Hero Weakness:{{hero.weakness}} </p>
+
+    </div>
 {{/partial}}
 {{>layout.hbs}}

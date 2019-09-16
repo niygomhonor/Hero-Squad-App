@@ -19,20 +19,28 @@ public class HeroTest {
     public void Hero_instantiating_Done_Correctly() {
 Hero amHero=new Hero("Honorine",20,"Ever present","Calm");
     }
-
     @Test
-    public void getAge() {
+    public void getName_forHeroesName_String() {
+        Hero myHero = new Hero("Vick",65,"madem","madem");
+        String expected = "Vick";
+        assertEquals(expected, myHero.getName());
     }
-
     @Test
-    public void getPower() {
+    public void getAge_forHeroesName_String() {
+        Hero myHero = new Hero("Vick",65,"madem","madem");
+        int expected = 65;
+        assertEquals(expected, myHero.getAge());
     }
-
     @Test
-    public void getWeakness() {
+    public void getWeakness_forHeroesName_String() {
+        Hero myHero = new Hero("Vick",65,"madem","madem");
+        String expected = "madem";
+        assertEquals(expected, myHero.getWeakness());
     }
-
     @Test
-    public void getId() {
+    public void getPower_forHeroesName_String() {
+        Hero myHero = new Hero("Vick",65,"madem","madem");
+        String expected = "madem";
+        assertEquals(expected, myHero.getPower());
     }
 }

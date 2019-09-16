@@ -1,7 +1,7 @@
 {{#partial "content"}}
 <div class="view">
 <div class="jumbotron text-center">
-  <h2 class="h2-reponsive text-info animated wobble"><strong>Add hero to {{squad.getsName()}}<i class="fas fa-user-plus animate rotateIn infinite"></i></strong></h2>
+
   <br>
   <form action="/heroes" method="post">
     <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
@@ -27,6 +27,7 @@
 
     <button type="submit" class="btn aqua-gradient text-white">Add Hero</button>
   </form>
+</div>
 </div>
 {{/partial}}
 

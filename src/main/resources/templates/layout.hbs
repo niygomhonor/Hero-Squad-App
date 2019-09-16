@@ -6,26 +6,30 @@
 <head>
    <title>{{#block "title"}}Hero-Squad{{/block}}</title>
    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="/App.css">
 </head>
 <body>
 <ul class="nav nav-tabs">
-   <li role="presentation" class="active"><a href="/">Home</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+                <a class="navbar-brand" href="/"><strong>Hero Squad</strong></a>
+
+        </nav>
+    </header>
      <li role="presentation"><a href="/heros/new">Add a New Hero</a></li>
            <li role="presentation"><a href="/squads/new">Add a Squad</a></li>
 </ul>
 
 <div class="container">
    <!--begin main template-->
-   <div class="page-header">
-{{!--        <img src="/images/rawpixel-com-296621.jpg" width="70%" alt="https://unsplash.com/search/task?photo=Lh_bn9SgRSY"> --}}
-       <h1>Welcome to Hero-Squad-App. </h1>
-   </div>
+   <div class="page-header text-center">
 
-   <div class="col-md-12">
-       {{#block "content"}}
-       {{/block}}
-
+       <h1>Hero-Squad-Application. </h1>
    </div>
+{{#block "content"}}
+    {{/block}}
 </div>
 <!--end main template-->
 {{#block "footer"}}

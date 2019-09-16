@@ -1,16 +1,29 @@
 body{
-background-image:url("images/bg.jpg")
+background-image:url("images/bg.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+
 }
 a:hover{
 color:yellow;
 }
-p,a{
+p{
 font-family: 'Merienda', cursive;
+color:white;
 }
 h4,h1,li,h2,h3{
 font-family: 'Merienda', cursive;
+color:white;
 }
 label{
 color:white;
 font-family: 'Merienda', cursive;
+}
+a{
+font-family: 'Merienda', cursive;
+}
+h1{
+font-size:50px;
+font-family: 'Merienda', cursive;
+color:white;
 }

@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 public class Squad{
     private String sName;
     private  String cause;
@@ -11,8 +9,8 @@ private static ArrayList<Squad>instance=new ArrayList<Squad>();
 
 private List<Hero>hHeroes;
 
-    public Squad(String sname, String cause,int size) {
-       this.sName=sname;
+    public Squad(String sName,String cause,int size) {
+       this.sName=sName;
       this.cause=cause;
       this.size=size;
       instance.add(this);
@@ -54,18 +52,6 @@ public static List<Squad>all(){
         return id;
     }
     public void addHero(Hero hero) {
-
         hHeroes.add(hero);
-    }
-    public static boolean heroAlreadyExists(Hero newHero) {
-        boolean exists = false;
-        for (Squad squad : instance) {
-            for (Hero hero : squad.gethHeroes()) {
-                if (hero.getName().equals(newHero.getName())) {
-                    exists = true;
-                }
-            }
-        }
-        return exists;
     }
 }
