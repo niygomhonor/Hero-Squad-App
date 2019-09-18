@@ -37,6 +37,11 @@ This application will allow user to design his desired hero and put him in any s
      +  LinkedIn:NIYONKURU Honorine
      +  Facebook:NIYONKURU Neodo Honorine
      +  Slack:NIYONKURU Honorine
+    
+    ### Picture of Application
+    
+    <img src= "MyApp/Hero-suqad-app.png">
+     
 ### LISENCE
 - [x] MIT
 
