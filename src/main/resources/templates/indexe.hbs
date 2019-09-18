@@ -22,7 +22,7 @@
                       {{#if squads}} <!--if posts exist, then -->
                           {{#each squads}} <!--loop-->
                               <a class="btn btn-outline-white " onclick="btnClick()"  href="/squads/{{id}}">View Squad List <i class="fas fa-dragon animated wobble infinite"></i> </a>
-                              <a href="/squads/{{id}}">{{sName}} Squad</a>
+                              <p><a href="/squads/{{id}}">{{sName}} Squad</a></p>
                           {{/each}}
                       {{else}}
                           <!--no posts!-->

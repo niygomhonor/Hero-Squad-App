@@ -1,51 +1,52 @@
-
 {{#block "header"}}
 
-<!DOCTYPE html>
-<html>
-<head>
-   <title>{{#block "title"}}Hero-Squad{{/block}}</title>
-   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href="/App.css">
-</head>
-<body>
-<ul class="nav nav-tabs">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>{{#block "title"}}Hero-Squad{{/block}}</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href="/App.css">
+    </head>
+    <body>
+    <ul class="nav nav-tabs">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 
                 <a class="navbar-brand" href="/"><strong>Hero Squad</strong></a>
 
-        </nav>
-    </header>
-     <li role="presentation"><a href="/heros/new">Add a New Hero</a></li>
-           <li role="presentation"><a href="/squads/new">Add a Squad</a></li>
-</ul>
+            </nav>
+        </header>
+        <li role="presentation"><a href="/heros/new">Add a New Hero</a></li>
+        <li role="presentation"><a href="/squads/new">Add a Squad</a></li>
+    </ul>
 
-<div class="container">
-   <!--begin main template-->
-   <div class="page-header text-center">
+    <div class="container">
+        <!--begin main template-->
+        <div class="page-header text-center">
 
-       <h1>Hero-Squad-Application. </h1>
-   </div>
-{{#block "content"}}
+            <h1>Hero-Squad-Application. </h1>
+        </div>
+        {{#block "content"}}
+        {{/block}}
+    </div>
+    <!--end main template-->
+    {{#block "footer"}}
+        <footer class="footer">
+            <div class="container">
+                <hr>
+                <p class="text-muted">
+                    {{!--               <a href="/categories/delete">delete all categories & tasks</a><br> --}}
+                    {{!--               <a href="/tasks/delete">delete all tasks</a> --}}
+                </p>
+            </div>
+        </footer>
+        </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        </html>
+
     {{/block}}
-</div>
-<!--end main template-->
-{{#block "footer"}}
-   <footer class="footer">
-       <div class="container">
-           <hr>
-           <p class="text-muted">
-{{!--               <a href="/categories/delete">delete all categories & tasks</a><br> --}}
-{{!--               <a href="/tasks/delete">delete all tasks</a> --}}
-           </p>
-       </div>
-   </footer>
-   </body>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   </html>
-
-  {{/block}}
-  {{/block}}
+{{/block}}

@@ -1,34 +1,34 @@
 {{#partial "content"}}
-<div class="view">
-<div class="jumbotron text-center">
+    <div class="view">
+        <div class="jumbotron text-center">
 
-  <br>
-  <form action="/heroes" method="post">
-    <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
-    <div class="form-group md-form">
-      <label class="active text-white" for="name">Name</label>
-      <input id="name" name="name" type="text" class="form-control text-white">
+            <br>
+            <form action="/heroes" method="post">
+                <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+                <div class="form-group md-form">
+                    <label class="active text-white" for="name">Name</label>
+                    <input id="name" name="name" type="text" class="form-control text-white">
+                </div>
+
+                <div class="form-group md-form">
+                    <label class="active text-white" for="age">Age</label>
+                    <input id="age" name="age" type="number" class="form-control text-white">
+                </div>
+
+                <div class="form-group md-form">
+                    <label class="active text-white" for="power">Powers</label>
+                    <input id="power" name="power" type="text" class="form-control text-white">
+                </div>
+
+                <div class="form-group md-form">
+                    <label class="active text-white" for="weakness">Weaknesses</label>
+                    <input id="weakness" name="weakness" type="text" class="form-control text-white">
+                </div>
+
+                <button type="submit" class="btn aqua-gradient text-white">Add Hero</button>
+            </form>
+        </div>
     </div>
-
-    <div class="form-group md-form">
-      <label  class="active text-white" for="age">Age</label>
-      <input id="age" name="age" type="number" class="form-control text-white">
-    </div>
-
-    <div class="form-group md-form">
-      <label class="active text-white" for="power">Powers</label>
-      <input id="power" name="power" type="text" class="form-control text-white">
-    </div>
-
-    <div class="form-group md-form">
-      <label class="active text-white" for="weakness">Weaknesses</label>
-      <input id="weakness" name="weakness" type="text" class="form-control text-white">
-    </div>
-
-    <button type="submit" class="btn aqua-gradient text-white">Add Hero</button>
-  </form>
-</div>
-</div>
 {{/partial}}
 
 {{> layout.hbs}}
