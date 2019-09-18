@@ -21,7 +21,11 @@ public class App {
             return new ModelAndView(model, "indexe.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/heroes/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "all.hbs");
 
+        }, new HandlebarsTemplateEngine());
         get("/heros/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "hero-form.hbs");

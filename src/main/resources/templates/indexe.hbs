@@ -1,35 +1,10 @@
 {{#partial "content"}}
 
+<h1>Create your own Hero in Game</h1>
+<a href="/heros/new"><button class=" btn btn-success">Create Hero</button></a>
 
-            <div class="mask rgba-black-light align-items-center">
-              <!-- Content -->
-              <div class="container">
-                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-
-
-                      {{#if hero}} <!--if posts exist, then -->
-                          {{#each hero }} <!--loop-->
-                              <a class="btn btn-outline-white" onclick="btnClick()"  href="/heroes/{{id}}">View Hero details <i class="fas fa-dragon animated wobble infinite"></i> </a>
-
-                              <p> Hero Name:<a href="/heroes/{{id}}">{{name}}</a></p> <!--show-->
-                          {{/each}}
-                      {{else}} <!--no posts!-->
-                          <p>No hero yet!</p>
-                      {{/if}}
-
-                   <h3>Squad Details</h3>
-
-                      {{#if squads}} <!--if posts exist, then -->
-                          {{#each squads}} <!--loop-->
-                              <a class="btn btn-outline-white " onclick="btnClick()"  href="/squads/{{id}}">View Squad List <i class="fas fa-dragon animated wobble infinite"></i> </a>
-                              <p><a href="/squads/{{id}}">{{sName}} Squad</a></p>
-                          {{/each}}
-                      {{else}}
-                          <!--no posts!-->
-                          <p>No Squad yet!</p>
-                      {{/if}}
-                  </div>
-                </div>
+<h1>Make your own Squad</h1>
+    <a href="squads/new"><button class=" btn btn-success" ></button></a>
 {{/partial}}
 
  {{> layout.hbs}}
