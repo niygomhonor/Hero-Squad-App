@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'Hello-squad'
@@ -20,12 +21,6 @@ dependencies {
     compile group: 'com.h2database', name: 'h2', version: '1.4.191'
 }
 
-test {
-    testLogging {
-//        exceptionFormat = 'full' events "passed" "skipped" "failed"
-    }
-}
-
-//applicationName = "hero-squad-app"
-//mainClassName = 'App'
+applicationName = "hero-squad-app"
+mainClassName = 'App'
 task stage(dependsOn: ['clean', 'installDist'])
